@@ -2,5 +2,33 @@
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
 body {
-  font-size: 14px;
+  // font-size: 14px;
+}
+
+.image-container {
+  height: 300px !important;
+  img {
+    object-fit: cover;
+    object-position: bottom;
+  }
+}
+.featurette-row {
+  &:nth-child(odd) {
+    .col {
+      &:nth-child(odd) {
+        order: 1;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  min-height: 50vh !important;
+  .swiper-slide-background {
+    height: 50vh !important;
+    position: relative;
+    img {
+      object-fit: cover;
+    }
+  }
 }
