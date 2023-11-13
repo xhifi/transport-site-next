@@ -12,7 +12,7 @@ const ContactForm = () => {
     e.preventDefault();
     // console.log(formData);
 
-    const send = await fetch("http://localhost:3000/email/api", {
+    const send = await fetch("/email/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
