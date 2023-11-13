@@ -2,7 +2,12 @@
 
 import { useState } from "react";
 const ContactForm = () => {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone_number: "",
+    message: "",
+  });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,7 +24,14 @@ const ContactForm = () => {
       },
       body: JSON.stringify({ email: "shifa.newversion@gmail.com", text: formData.message, subject: "Coming from website" }),
     });
-    setFormData({});
+    if (send.ok) {
+      setFormData({
+        name: "",
+        email: "",
+        phone_number: "",
+        message: "",
+      });
+    }
     console.log(send);
   };
 
