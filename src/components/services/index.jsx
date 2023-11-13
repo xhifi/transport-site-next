@@ -32,11 +32,11 @@ const mockData = {
 
 const index = () => {
   return (
-    <div className="container py-4">
-      <div className="services-heading mb-4">
+    <div className="services-container">
+      <div className="services-heading">
         <h2 className="text-center">Our Services</h2>
       </div>
-      <div className="row row-cols-1 row-cols-md-4 g-4">
+      <div className="services row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
         {mockData.servicesSprites.map((item, index) => {
           return <ServiceSprite heading={item.heading} description={item.description} image={item.image} key={index} />;
         })}

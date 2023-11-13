@@ -5,6 +5,13 @@ body {
   // font-size: 14px;
 }
 
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .image-container {
   height: 300px !important;
   img {
@@ -30,5 +37,52 @@ body {
     img {
       object-fit: cover;
     }
+  }
+}
+
+.services-container {
+  @extend .container, .py-4;
+  .services-heading {
+    @extend .mb-4;
+    h2 {
+      @extend .text-center;
+    }
+  }
+}
+
+.services {
+  .service {
+    .service-inner {
+      @extend .overflow-hidden, .rounded, .rounded-4, .shadow, .card, .border-0, .h-100, .position-relative;
+      .service-header {
+      }
+    }
+  }
+}
+
+.service-icon {
+  @extend .d-block, .position-relative, .rounded-circle, .p-2, .bg-warning, .shadow, .text-light;
+  aspect-ratio: 1/1;
+  width: 5rem;
+  height: 5rem;
+  top: -2rem;
+  left: 62%;
+  i {
+    @extend .position-absolute, .h1, .absolute-center;
+  }
+}
+
+.why-choose-us {
+  @extend .col;
+  .content {
+    @extend .p-4;
+  }
+}
+
+.hero-image-container {
+  height: 30rem;
+  .hero-image {
+    object-fit: contain;
+    width: 160% !important;
   }
 }

@@ -21,7 +21,7 @@ const index = () => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      autoplay={{ delay: 2000, disableOnInteraction: false, pauseOnMouseEnter: true }}
+      autoplay={{ delay: 10000, disableOnInteraction: false, pauseOnMouseEnter: true }}
       loop={true}
       pagination={{ clickable: true }}
       navigation={true}
