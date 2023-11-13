@@ -19,10 +19,10 @@ const ContactForm = () => {
       },
       body: JSON.stringify({ email: "shifa.newversion@gmail.com", text: formData.message, subject: "Coming from website" }),
     });
-
+    setFormData({});
     console.log(send);
   };
-  console.log(formData);
+
   return (
     <form onSubmit={handleSubmit}>
       <div className="mb-3">
