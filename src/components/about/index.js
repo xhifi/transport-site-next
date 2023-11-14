@@ -6,7 +6,7 @@ const index = () => {
         As leaders in specialized vehicle transportation, we excel in seamlessly moving automobiles with unparalleled efficiency. With over
         two decades of industry expertise, we stand as a distinguished transportation solutions provider. Our commitment to excellence is
         evident in the breadth of services we offer, encompassing air freight, sea freight, and ground transportation. Entrust your valuable
-        vehicles to the industry's best – where precision, experience, and professionalism converge to make us your premier choice for
+        vehicles to the industry&apos;s best – where precision, experience, and professionalism converge to make us your premier choice for
         automobile transport.
       </p>
       <p>
