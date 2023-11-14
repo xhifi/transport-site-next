@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
   tls: { rejectUnauthorized: true },
 });
 
-export async function SendMail(email, subject, text) {
+export async function SendMail({ email, subject, text, html }) {
   console.log(`sending email`);
   return await new Promise((resolve, reject) => {
     transporter.sendMail(
@@ -20,6 +20,7 @@ export async function SendMail(email, subject, text) {
         to: email,
         subject,
         text,
+        html,
       },
       (err, info) => {
         if (err) {

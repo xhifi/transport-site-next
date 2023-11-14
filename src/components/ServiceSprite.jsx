@@ -1,13 +1,11 @@
-import Card from "./core/Card";
-import Image from "./core/Image";
-import Link from "./core/Link";
+import Image from "next/image";
 
-const ServiceSprite = ({ image, heading, description, children }) => {
+const ServiceSprite = ({ image, heading, alt, description, children }) => {
   return (
-    <div className="service col">
+    <div className="service col-12 col-sm-6 col-md-4">
       <div className="service-inner">
         <div className="position-relative">
-          <Image src={image} layout="fill" className="position-relative" />
+          <Image src={image} fill className="position-relative service-image" alt={heading || alt} />
           <span className="service-icon">
             <i className="bi bi-4-circle-fill"></i>
           </span>

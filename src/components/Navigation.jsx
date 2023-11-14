@@ -1,6 +1,3 @@
-import Dropdown from "./core/Dropdown";
-import LOGO from "../app/favicon.ico";
-import Image from "./core/Image";
 import Link from "./core/Link";
 import { useState } from "react";
 import Brand from "../../public/brand.svg";
@@ -19,16 +16,16 @@ const Navigation = () => {
 
           <ul className="align-items-center list-unstyled mb-0 ms-auto d-none d-md-flex">
             <li className="border-end px-3">
-              <i class="bi bi-globe-americas me-1"></i>Virginia
+              <i className="bi bi-globe-americas me-1"></i>77002 Houston Texas
             </li>
             <li className="border-end px-3">
               <Link path="tel:3463263009" className="text-dark text-decoration-none">
-                <i class="bi bi-telephone-fill me-1"></i>(346) 326-3009
+                <i className="bi bi-telephone-fill me-1"></i>(346) 326-3009
               </Link>
             </li>
             <li className="ps-3">
               <Link path="mailto:support@activetransportllc.com" className="text-dark text-decoration-none">
-                <i class="bi bi-envelope-fill me-1"></i> support@activetransportllc.com
+                <i className="bi bi-envelope-fill me-1"></i> support@activetransportllc.com
               </Link>
             </li>
           </ul>
@@ -80,13 +77,13 @@ const Navigation = () => {
           </nav>
           <ul className="list-unstyled m-0 d-flex align-items">
             <li className="me-2">
-              <i class="bi bi-facebook me-1"></i>
+              <i className="bi bi-facebook me-1"></i>
             </li>
             <li className="me-2">
-              <i class="bi bi-instagram me-1"></i>
+              <i className="bi bi-instagram me-1"></i>
             </li>
             <li className="me-2">
-              <i class="bi bi-google me-1"></i>
+              <i className="bi bi-google me-1"></i>
             </li>
           </ul>
         </div>
