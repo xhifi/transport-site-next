@@ -1,4 +1,4 @@
-export default {
+const services = {
   servicesTitle: "Service Title",
   servicesSprites: [
     {
@@ -33,3 +33,5 @@ export default {
     },
   ],
 };
+
+export default services;
