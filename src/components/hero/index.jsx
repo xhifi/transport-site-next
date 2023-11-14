@@ -5,7 +5,7 @@ import Link from "../core/Link";
 
 const index = () => {
   return (
-    <div className="container-fluid p-4 hero-container overflow-hidden position-relative hero-container">
+    <div className="container-fluid p-4 hero-container overflow-hidden position-relative hero-container shadow">
       <div className="hero-bg">
         <Image src={HeroBG} />
       </div>

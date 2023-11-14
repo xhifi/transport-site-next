@@ -20,7 +20,6 @@ const index = () => {
           <FooterLogo />
           <FooterList data={mockData} />
           <FooterList data={mockData} />
-          <FooterList data={mockData} />
         </div>
       </div>
       <Annotations />

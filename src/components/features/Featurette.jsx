@@ -7,7 +7,7 @@ const Featurette = ({ children, heading, invert, image }) => {
         <h3>{heading}</h3>
         {children}
       </div>
-      <div className="col-12 col-md-6 col-lg-5 shadow image-container position-relative rounded shadow overflow-hidden">
+      <div className="col-12 col-md-6 col-lg-5 shadow image-container position-relative rounded-4 shadow overflow-hidden">
         <Image src={image} fill className="img-fluid" />
       </div>
     </div>

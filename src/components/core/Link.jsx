@@ -1,4 +1,5 @@
 import NLink from "next/link";
+import { Link as ScrollLink } from "react-scroll";
 
 const checkLink = (link) => {
   try {
@@ -12,7 +13,30 @@ const checkLink = (link) => {
   }
 };
 
+const scroll2El = (elID) => {
+  window.scrollTo({
+    top: document.getElementById(elID).offsetTop - 60,
+    behavior: "smooth",
+  });
+};
+
+const scrollToSection = (e) => {
+  e.preventDefault();
+  const goto = e.target.getAttribute("goto");
+  setTimeout(() => {
+    scroll2El(goto);
+  }, 100);
+};
+
 const Link = ({ path, children, ...rest }) => {
+  if (path.startsWith("#")) {
+    return (
+      <button onClick={scrollToSection} goto={path} {...rest}>
+        {children}
+      </button>
+    );
+  }
+
   if (checkLink(path)) {
     return (
       <a href={path} target="_blank" rel="noreferrer" {...rest}>

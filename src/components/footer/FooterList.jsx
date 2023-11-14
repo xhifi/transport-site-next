@@ -2,9 +2,9 @@ import Link from "../core/Link";
 
 const FooterList = ({ data }) => {
   return (
-    <div className="col">
+    <div className="col-12 col-md-4">
       <h5>{data.footerListHeading}</h5>
-      <ul className="mb-0 list-unstyled footer-list">
+      <ul className="list-unstyled footer-list">
         {data.footerLinks.map((listItem, index) => {
           return (
             <li key={index}>

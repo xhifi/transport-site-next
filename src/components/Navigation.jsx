@@ -20,19 +20,19 @@ const Navigation = () => {
             </li>
             <li className="border-end px-3">
               <Link path="tel:3463263009" className="text-dark text-decoration-none">
-                <i className="bi bi-telephone-fill me-1"></i>(346) 326-3009
+                <i className="bi bi-telephone-fill"></i>(346) 326-3009
               </Link>
             </li>
             <li className="ps-3">
               <Link path="mailto:support@activetransportllc.com" className="text-dark text-decoration-none">
-                <i className="bi bi-envelope-fill me-1"></i> support@activetransportllc.com
+                <i className="bi bi-envelope-fill"></i> support@activetransportllc.com
               </Link>
             </li>
           </ul>
         </div>
       </div>
 
-      <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom shadow sticky-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -49,19 +49,19 @@ const Navigation = () => {
           <nav className={`collapse navbar-collapse ${menuOpen ? "show" : "collapse"}`} id="navbarSupportedContent">
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" path="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" path="#about">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" path="#services">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -69,9 +69,9 @@ const Navigation = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" path="#contact">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

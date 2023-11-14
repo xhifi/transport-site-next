@@ -1,9 +1,9 @@
-import ServiceSprite from "../ServiceSprite";
+import ServiceSprite from "./ServiceSprite";
 import ServicesData from "@/data/services";
 
 const index = () => {
   return (
-    <div className="services-container">
+    <div className="services-container" id="#services">
       <div className="services-heading">
         <h2 className="text-center">Our Services</h2>
       </div>

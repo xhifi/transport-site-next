@@ -2,9 +2,9 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <div className="container py-5">
+    <div className="container py-5" id="#contact">
       <div className="row row-cols-1 row-cols-md-2 align-items-center">
-        <div className="col bg-light p-4 rounded-4 shadow">
+        <div className="col glass-white p-4 rounded-4">
           <h3>Contact Us</h3>
           <ContactForm />
         </div>
