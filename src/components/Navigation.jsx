@@ -1,3 +1,4 @@
+"use client";
 import Link from "./core/Link";
 import { useState } from "react";
 import Brand from "../../public/brand.svg";
