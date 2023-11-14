@@ -1,5 +1,4 @@
 import NLink from "next/link";
-import { Link as ScrollLink } from "react-scroll";
 
 const checkLink = (link) => {
   try {
