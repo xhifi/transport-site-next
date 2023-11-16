@@ -20,13 +20,13 @@ const Navigation = () => {
               <i className="bi bi-globe-americas me-1"></i>77002 Houston Texas
             </li>
             <li className="border-end px-3">
-              <Link path="tel:3463263009" className="text-dark text-decoration-none">
-                <i className="bi bi-telephone-fill"></i>(346) 326-3009
+              <Link path="tel:3463263009" className="">
+                <i className="bi bi-telephone-fill me-1"></i>(346) 326-3009
               </Link>
             </li>
             <li className="ps-3">
-              <Link path="mailto:support@activetransportllc.com" className="text-dark text-decoration-none">
-                <i className="bi bi-envelope-fill"></i> support@activetransportllc.com
+              <Link path="mailto:support@activetransportllc.com" className="">
+                <i className="bi bi-envelope-fill me-1"></i> support@activetransportllc.com
               </Link>
             </li>
           </ul>
@@ -63,11 +63,6 @@ const Navigation = () => {
                 <Link className="nav-link" path="#services">
                   Our Services
                 </Link>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Why Choose Us?
-                </a>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" path="#contact">

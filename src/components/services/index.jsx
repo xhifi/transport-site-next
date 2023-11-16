@@ -3,9 +3,9 @@ import ServicesData from "@/data/services";
 
 const index = () => {
   return (
-    <div className="services-container" id="#services">
+    <div className="services-container my-5" id="#services">
       <div className="services-heading">
-        <h2 className="text-center">Our Services</h2>
+        <h2 className="text-center display-4 fw-bold">Our Services</h2>
       </div>
       <div className="services row row-cols-md-4 g-4 justify-content-center">
         {ServicesData.servicesSprites.map((item, index) => {

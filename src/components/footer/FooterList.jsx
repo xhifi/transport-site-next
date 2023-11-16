@@ -2,18 +2,18 @@ import Link from "../core/Link";
 
 const FooterList = ({ data }) => {
   return (
-    <div className="col-12 col-md-4">
-      <h5>{data.footerListHeading}</h5>
-      <ul className="list-unstyled footer-list">
-        {data.footerLinks.map((listItem, index) => {
-          return (
-            <li key={index}>
-              <Link path={listItem.path}>{listItem.text}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="col-12 col-md-4 list-unstyled footer-list">
+      {data.map((listItem, index) => {
+        return (
+          <li key={index}>
+            <i className="bi bi-chevron-right"></i>{" "}
+            <Link path={listItem.path} className="footer-list text-decoration-none">
+              {listItem.text}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 export default FooterList;

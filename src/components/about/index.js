@@ -1,7 +1,7 @@
 const index = () => {
   return (
-    <div id="#about" className="text-center bg-warning p-5 shadow">
-      <h2>About Us</h2>
+    <div id="#about" className="text-center bg-primary bg-gradient p-5 shadow text-white">
+      <h2 className="display-4 fw-bold">About Us</h2>
       <p>
         As leaders in specialized vehicle transportation, we excel in seamlessly moving automobiles with unparalleled efficiency. With over
         two decades of industry expertise, we stand as a distinguished transportation solutions provider. Our commitment to excellence is

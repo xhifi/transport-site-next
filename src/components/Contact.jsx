@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="why-choose-us">
           <div className="content p-4">
             <h3>Why Choose Us?</h3>
-            <ul>
+            <ul className="importance-list">
               <li>We cover the entire country, ensuring your vehicles get where they need to be.</li>
               <li>Choose from open or enclosed transport, and even expedited shipping</li>
               <li>Our testimonials speak to the satisfaction of our clients</li>

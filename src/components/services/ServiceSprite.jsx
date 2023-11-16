@@ -11,9 +11,9 @@ const ServiceSprite = ({ image, heading, alt, description, children }) => {
           </span>
         </div>
 
-        <div className="card-content p-3 mt-5">
-          <h3>{heading}</h3>
-          <p>{description}</p>
+        <div className="text-primary p-4 mt-5">
+          <h3 className="fw-medium h4">{heading}</h3>
+          <p className="mb-0">{description}</p>
         </div>
       </div>
     </div>

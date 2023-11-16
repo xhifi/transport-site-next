@@ -3,12 +3,18 @@ import FooterList from "./FooterList";
 import FooterLogo from "./FooterLogo";
 
 const mockData = {
-  footerListHeading: "Mock Heading",
   footerLinks: [
-    { path: "/", text: "Home Page" },
-    { path: "/about", text: "About Page" },
-    { path: "/why-us", text: "Why Us?" },
-    { path: "/contact", text: "Contact Us" },
+    [
+      { path: "/", text: "Home" },
+      { path: "/", text: "About Us" },
+      { path: "/", text: "Services we offer" },
+      { path: "/", text: "Book a meeting" },
+    ],
+    [
+      { path: "/", text: "Privacy Policy" },
+      { path: "/about", text: "Data Security Policy" },
+      { path: "/why-us", text: "Health and Control Policy" },
+    ],
   ],
 };
 
@@ -18,8 +24,9 @@ const index = () => {
       <div className="container-fluid bg-light border-top py-4">
         <div className="row row-cols-1 row-cols-sm-1 row-cols-md-4">
           <FooterLogo />
-          <FooterList data={mockData} />
-          <FooterList data={mockData} />
+          {mockData.footerLinks.map((list, index) => {
+            return <FooterList data={list} key={index} />;
+          })}
         </div>
       </div>
       <Annotations />

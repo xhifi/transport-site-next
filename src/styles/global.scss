@@ -1,8 +1,14 @@
+$primary: #073f6f;
+$secondary: #fc5157;
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
 body {
-  // font-size: 14px;
+  @extend .text-primary;
+  font-size: 15px;
 }
 
 .glass-white {
@@ -90,6 +96,7 @@ body {
   .content {
     @extend .p-4;
   }
+  font-size: 17px;
 }
 
 .hero-container {
@@ -142,4 +149,17 @@ body {
     transform: translate(-50%, -50%);
     background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6));
   }
+}
+
+.importance-list {
+  @extend .mb-0;
+  list-style: armenian outside url("../../public/images/icons/check-circle.svg");
+}
+
+.border-funky-1 {
+  border-radius: 38% 62% 46% 54% / 75% 38% 62% 25%;
+}
+
+.border-funky-2 {
+  border-radius: 22% 78% 23% 77% / 42% 56% 44% 58%;
 }
