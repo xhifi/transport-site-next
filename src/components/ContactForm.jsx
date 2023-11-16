@@ -25,7 +25,7 @@ const ContactForm = () => {
         },
         body: JSON.stringify(data),
       });
-      console.log(submitted);
+
       if (submitted.ok) {
         setSubmitted(true);
         reset();
@@ -36,7 +36,6 @@ const ContactForm = () => {
       setLoading(false);
     }
   };
-  console.log("errors: ", errors);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

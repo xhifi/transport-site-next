@@ -10,6 +10,7 @@ export async function POST(request) {
       statusText: "Provide name, email, phone number and message properly.",
     });
   }
+
   const finalMessage = `
   <b style="color: crimson">Name:</b> ${name}<br />
   <b style="color: crimson">Phone:</b> ${phone}<br />
@@ -17,9 +18,8 @@ export async function POST(request) {
   <b style="color: crimson">Mode of Transport:</b> ${option}<br />
   <hr />
   <span style="color: crimson"><b>Message:</b></span> ${message}`;
-  const mailed = await SendMail({ email, subject: `Website Submission - ${name} - ${phone}`, html: finalMessage });
 
-  console.log(mailed);
+  const mailed = await SendMail({ subject: `Website Submission - ${name} - ${phone}`, html: finalMessage });
 
   return NextResponse.json({ mailed });
 }

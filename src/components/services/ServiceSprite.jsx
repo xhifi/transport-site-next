@@ -6,9 +6,9 @@ const ServiceSprite = ({ image, heading, alt, description, children }) => {
       <div className="service-inner">
         <div className="position-relative">
           <Image src={image} fill className="position-relative service-image" alt={heading || alt} />
-          <span className="service-icon">
+          {/* <span className="service-icon">
             <i className="bi bi-4-circle-fill"></i>
-          </span>
+          </span> */}
         </div>
 
         <div className="text-primary p-4 mt-5">

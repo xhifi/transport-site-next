@@ -17,8 +17,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.48.2",
     "sass": "^1.69.5",
-    "sharp": "^0.32.6",
-    "swiper": "^11.0.3"
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "eslint": "^8",

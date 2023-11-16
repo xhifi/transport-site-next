@@ -9,7 +9,7 @@ const Annotations = () => {
       <small>
         Developed by{" "}
         <Link path="https://www.brainloggers.co.uk" rel="referrer" className="text-light text-decoration-none">
-          Brainloggers Ltd.&reg; {date}
+          Brainloggers Ltd.&copy; {date}
         </Link>
       </small>
     </div>

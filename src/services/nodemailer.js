@@ -1,8 +1,8 @@
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
+  host: process.env.EMAIL_HOST,
+  port: process.env.EMAIL_PORT,
   secure: false, // upgrade later with STARTTLS
   auth: {
     user: process.env.EMAIL,
@@ -17,7 +17,7 @@ export async function SendMail({ email, subject, text, html }) {
     transporter.sendMail(
       {
         from: process.env.EMAIL,
-        to: email,
+        to: process.env.EMAIL_TO,
         subject,
         text,
         html,

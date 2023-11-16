@@ -10,11 +10,11 @@ const mockData = {
       { path: "/", text: "Services we offer" },
       { path: "/", text: "Book a meeting" },
     ],
-    [
-      { path: "/", text: "Privacy Policy" },
-      { path: "/about", text: "Data Security Policy" },
-      { path: "/why-us", text: "Health and Control Policy" },
-    ],
+    // [
+    //   { path: "/", text: "Privacy Policy" },
+    //   { path: "/", text: "Data Security Policy" },
+    //   { path: "/", text: "Transportation Policy" },
+    // ],
   ],
 };
 
@@ -27,6 +27,12 @@ const index = () => {
           {mockData.footerLinks.map((list, index) => {
             return <FooterList data={list} key={index} />;
           })}
+          <div className="col">
+            <p className="mb-0 mb-md-2">
+              Choose us to relocate your valuable vehicles. At Active Transports experience and professionalism combine to make us your
+              premier choice for automobile transport
+            </p>
+          </div>
         </div>
       </div>
       <Annotations />
