@@ -7,7 +7,7 @@ const FooterList = ({ data }) => {
         return (
           <li key={index}>
             <i className="bi bi-chevron-right"></i>{" "}
-            <Link path={listItem.path} className="footer-list text-decoration-none">
+            <Link path={listItem.path} className="footer-list-item-link text-decoration-none">
               {listItem.text}
             </Link>
           </li>

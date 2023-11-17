@@ -163,3 +163,28 @@ body {
 .border-funky-2 {
   border-radius: 22% 78% 23% 77% / 42% 56% 44% 58%;
 }
+
+.footer-list-item-link {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover {
+    filter: brightness(80%);
+  }
+  &:focus {
+    background: none;
+  }
+  &:focus {
+    outline: none;
+    outline-offset: -4px;
+  }
+  @extend .nav-link;
+}

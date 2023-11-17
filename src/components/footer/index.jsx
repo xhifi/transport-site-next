@@ -6,15 +6,10 @@ const mockData = {
   footerLinks: [
     [
       { path: "/", text: "Home" },
-      { path: "/", text: "About Us" },
-      { path: "/", text: "Services we offer" },
-      { path: "/", text: "Book a meeting" },
+      { path: "#about", text: "About Us" },
+      { path: "#services", text: "Services we offer" },
+      { path: "#contact", text: "Book a meeting" },
     ],
-    // [
-    //   { path: "/", text: "Privacy Policy" },
-    //   { path: "/", text: "Data Security Policy" },
-    //   { path: "/", text: "Transportation Policy" },
-    // ],
   ],
 };
 
