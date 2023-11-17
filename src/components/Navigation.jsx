@@ -25,8 +25,8 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="ps-3">
-              <Link path="mailto:support@activetransportllc.com" className="">
-                <i className="bi bi-envelope-fill me-1"></i> support@activetransportllc.com
+              <Link path="mailto:info@activetransportllc.com" className="">
+                <i className="bi bi-envelope-fill me-1"></i> info@activetransportllc.com
               </Link>
             </li>
           </ul>

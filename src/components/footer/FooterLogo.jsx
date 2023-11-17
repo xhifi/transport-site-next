@@ -16,8 +16,8 @@ const FooterLogo = () => {
           </Link>
         </li>
         <li>
-          <Link path="mailto:support@activetransportllc.com" className="text-decoration-none">
-            <i className="bi bi-envelope-fill me-1"></i> support@activetransportllc.com
+          <Link path="mailto:info@activetransportllc.com" className="text-decoration-none">
+            <i className="bi bi-envelope-fill me-1"></i> info@activetransportllc.com
           </Link>
         </li>
       </ul>
